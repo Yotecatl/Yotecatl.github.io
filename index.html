@@ -37,6 +37,11 @@
         border-radius:50%;
       }
 
+      #porfolio img {
+        height:  200px;
+        width: auto;
+      }
+
       #hero h1 {
         font-family: 'Montserrat', sans-serif;
         font-weight:700;
@@ -52,6 +57,76 @@
 
       #hero .fa-star {
         color: white;
+      }
+
+      #portafolio .project {
+        height: 300px;
+        background-color: #D6041A;
+      }
+
+      #portafolio h1 {
+        font-family: 'Montserrat' sans-serif;
+        color:#D6041A;
+        font-weight: 700;
+      }
+
+      #hero .star hr {
+        width: 100px;
+        height: 5px;
+        color: white;
+      }
+
+      #hero .star .fa-star {
+        color: white;
+      }
+
+      #portafolio .star hr {
+        width: 100px;
+        height: 5px;
+        color: #D6041A;
+      }
+
+      #portafolio .star .fa-star {
+        color: #D6041A;
+      }
+
+      #about {
+        background-color: #4C0E4C
+      }
+
+      #about .star hr {
+        width: 100px;
+        height: 5px;
+        color: white;
+      }
+
+      #about .star .fa-star {
+        color: white;
+      }
+
+      #about h1 {
+        font-family: 'Montserrat' sans-serif;
+        color: white;
+        font-weight: 700;
+      }
+
+      #about p {
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-style: 20px;
+      }
+
+      #about button {
+        border: soloid 2.5px white;
+        color: white;
+        font-size: 20px;
+        padding-top: :  20px;
+        padding-bottom: 20px;
+      }
+
+      #about button:hover {
+        color: black;
+        background-color: white;
       }
 
       /*
@@ -87,8 +162,64 @@
     <div id="hero" class="container-fluid d-flex flex-column justify-content-center align-items-center">
       <img src="http://profilepicturesdp.com/wp-content/uploads/2018/06/blank-profile-picture-png-7.png" alt="foto perfil">
       <h1 class="text-center mt-4">Jorge Contreras</h1>
-      <i class="fas fa-star fa-3x text-center mt-4"></i>
+      <div class="star my-4 d-flex flex-row justify-content-center align-items-center">
+        <hr class="m-0 p-0 mr-3">
+        <i class="fas fa-star fa-3x text-center"></i>
+        <hr class="m-0 p-0 ml-3">
+      </div>
       <p class="text-center mt-4">Web Developer - Game Designer </p>
+    </div>
+
+
+    <div id="portafolio" class="container-fluid p-5">
+      <h1 class="text-center mt-5">PORTFOLIO</h1>
+      <div class="star my-4 d-flex flex-row justify-content-center align-items-center">
+        <hr class="m-0 p-0 mr-3">
+        <i class="fas fa-star fa-3x text-center"></i>
+        <hr class="m-0 p-0 ml-3">
+      </div>
+      <div class="row d-flex justify-content-around">
+        <div class="col-12 col-sm-6 col-lg-4 px-4 my-4">
+          <div class="project d-flex justify-content-center align-items-center">
+            <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdlNAxLoplMxuYK1OmXRmHm1zAVhapEIuRJCUxlv8lTY9hfQNyTA" alt="git logo">
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 px-4 my-4">
+          <div class="project d-flex justify-content-center align-items-center">
+            <img class="img-fluid" src="https://webhostingespanol.com/wp-content/uploads/2015/10/html-logo.png" alt="html logo">
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 px-4 my-4">
+          <div class="project d-flex justify-content-center align-items-center">
+            <img class="img-fluid" src="https://appendto.com/wp-content/uploads/2016/05/css3-420x210.jpg" alt="css logo">
+          </div>
+        </div>
+      </div>
+
+
+      <div id="about" class="container-fluid pb-5">
+        <div class="row d-flex flex-column justify-content-center align-items-center">
+
+          <h1 class="text-center col-12">ABOUT</h1>
+
+          <div class="star my-4 d-flex flex-row justify-content-center align-items-center">
+            <hr class="m-0 p-0 mr-3">
+            <i class="fas fa-star fa-3x text-center"></i>
+            <hr class="m-0 p-0 ml-3">
+          </div>
+
+          <p class="text-left col-12 mt-3 px-5">Soy desarrollador web </p>
+          <p class="text-left col-12 px-5">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.
+Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!
+</p>
+
+          <a class="col-12 col-md-8 col-lg-5" href="https://github.com/Yotecatl" target="_blank">
+            <button type="button" class="btn btn-secondary col-12 col-5 mt-4">
+              <i class="fab fa-github-square mr-1"></i>Visit my GitHub</button></a>
+
+        </div>
+
+      </div>
 
     </div>
 
