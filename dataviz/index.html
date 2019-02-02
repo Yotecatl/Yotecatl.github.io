@@ -1,0 +1,492 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <script type="text/javascript" src="js/datos.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <title>Estadisticas Alumno</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(36, 12, 12);">
+        <a class="navbar-brand" href="#">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTFfronFRjVoB9uWrhTh0eofCLI09iB_CXSDwKVrN2F-NZiUpdMA" width="30" height="30" class="d-inline-block align-top" alt="">
+          Taller de Videojuegos
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">ESCUELA <span class="sr-only">(current)</span></a>
+            </li>
+             
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Alumnos
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Alumno1</a>
+                <a class="dropdown-item" href="#">Alumno2</a>
+                <a class="dropdown-item" href="#">Alumno3</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+
+        <!--Sección alumno-->
+        <div class="titulo">
+          <h1>ALUMNO</h1>
+          <div class="adorno"></div>
+        </div>      
+        
+        <div class="row">
+            <div class="col-12 col-md-6 col-xl-4">
+              <img class="foto" height="60px" width="40px"    src="https://svgsilh.com/svg/1299805.svg" alt="foto perfil">
+                <table class="infoAlumno">
+                  <tr>
+                    <td>Nombre</td>
+                    <td>Erick Campos</td>
+                  </tr>
+                  <tr>
+                    <td>ID</td>
+                    <td>PokeMonster</td>
+                  </tr>
+                  <tr>
+                      <td>Grado</td>
+                      <td>4°</td>
+                    </tr>
+                </table>   
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-4 gradienteGraf">
+              <svg height="150" width="400">
+                  <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" style="stop-color:#b44444;stop-opacity:1" />
+                      <stop offset="100%" style="stop-color:#96061e;stop-opacity:1" />
+                    </linearGradient>
+                  </defs>
+                  <rect width="100" height="20" x="110" y="0" fill="url(#grad1)"/>
+                  <text fill="#a79d9d" font-size="20" font-family="Verdana" x="0" y="18">Asistencia</text>
+                  <text fill="#a79d9d" font-size="20" font-family="Verdana" x="220" y="18">100%</text>
+
+                  <rect width="100" height="20" x="110" y="25" fill="url(#grad1)"/>
+                  <text fill="#a79d9d" font-size="20" font-family="Verdana" x="0" y="43">Aptitud</text>
+                  <text fill="#a79d9d" font-size="20" font-family="Verdana" x="220" y="43">100%</text>
+
+                  <rect width="80" height="20" x="110" y="50" fill="url(#grad1)"/>
+                  <text fill="#a79d9d" font-size="20" font-family="Verdana" x="0" y="68">Actitud</text>
+                  <text fill="#a79d9d" font-size="20" font-family="Verdana" x="220" y="68">100%</text>
+
+                </svg>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-4 gradienteGraf">
+              <svg height="150" width="400">
+                  <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" style="stop-color:#b44444;stop-opacity:1" />
+                      <stop offset="100%" style="stop-color:#96061e;stop-opacity:1" />
+                    </linearGradient>
+                  </defs>
+                  <rect width="100" height="20" x="130" y="0" fill="url(#grad1)"/>
+                  <text fill="#a79d9d" font-size="20" font-family="Verdana" x="0" y="18">Creatividad</text>
+                  <text fill="#a79d9d" font-size="20" font-family="Verdana" x="240" y="18">100%</text>
+
+                  <rect width="100" height="20" x="130" y="25" fill="url(#grad1)"/>
+                  <text fill="#a79d9d" font-size="20" font-family="Verdana" x="0" y="43">Participación</text>
+                  <text fill="#a79d9d" font-size="20" font-family="Verdana" x="240" y="43">100%</text>
+
+                  <rect width="80" height="20" x="130" y="50" fill="url(#grad1)"/>
+                  <text fill="#a79d9d" font-size="20" font-family="Verdana" x="0" y="68">Conducta</text>
+                  <text fill="#a79d9d" font-size="20" font-family="Verdana" x="240" y="68">80%</text>
+
+                </svg>
+              
+            </div>
+        </div> <!--row-->
+        
+        <!--Sección de herramientas-->
+        <div class="titulo">
+          <h1>HERRAMIENTAS</h1>
+          <div class="adorno"></div>
+        </div>      
+
+        <div class="row">
+            <div class="col-12 col-md-6 col-xl-4">
+              <h3>Bloxels</h3>
+              <div id="tableB" class="col tablas"></div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <h3>Gamestar Mechanic</h3>
+              <div id="tableG" class="col tablas"></div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <h3>Kodu Game Lab</h3>
+              <div id="tableK" class="col tablas"></div>
+            </div>
+        </div> <!--row -->
+
+        <!--Sección habilidades-->
+        <div class="titulo">
+          <h1>HABILIDADES</h1>
+          <div class="adorno"></div>
+        </div>      
+        <div class="row">
+            <div class="col-12 col-sm-6 col-xl-4">
+              <h3>Narrativa</h3>
+              <div id="narrativa"></div>
+              <script>
+                  
+                  const svg = d3.select("#narrativa")
+                    .append("svg")
+                      .attr("width", w)
+                      .attr("height", h);
+    
+                    svg.selectAll("rect")
+                    .data(narra)
+                    .enter()
+                    .append("rect")
+                      .attr("x", (d, i) => 22 + i * 40)
+                      .attr("y", (d, i) => h - d-40)
+                      .attr("width", 30)
+                      .attr("height", (d, i) => d)
+                      .attr("fill", "#96061e")
+                      .attr("class", "bar")
+                      .append("title")
+                        .text((d)=>d + "%");
+                  
+                    svg.selectAll("text")
+                      .data(mes)
+                      .enter()
+                      .append('text')
+                      .attr('x', (d,i)=> 23 + i*40)
+                      .attr('y', (d,i)=> h-20)
+                      .text((d)=>d)
+                      .attr('fill','#a79d9d');
+              </script>
+            </div>
+            <div class="col-12 col-sm-6 col-xl-4">
+              <h3>Dialogos</h3>
+              <div id="dialogos"></div>
+              <script>
+                  
+                  const svgd = d3.select("#dialogos")
+                    .append("svg")
+                      .attr("width", w)
+                      .attr("height", h);
+    
+                    svgd.selectAll("rect")
+                    .data(dialogo)
+                    .enter()
+                    .append("rect")
+                      .attr("x", (d, i) => 22 + i * 40)
+                      .attr("y", (d, i) => h - d-40)
+                      .attr("width", 30)
+                      .attr("height", (d, i) => d)
+                      .attr("fill", "#96061e")
+                      .attr("class", "bar")
+                      .append("title")
+                        .text((d)=>d + "%");
+                  
+                    svgd.selectAll("text")
+                      .data(mes)
+                      .enter()
+                      .append('text')
+                      .attr('x', (d,i)=> 23 + i*40)
+                      .attr('y', (d,i)=> h-20)
+                      .text((d)=>d)
+                      .attr('fill','#a79d9d');
+  
+                </script>
+            </div>
+            <div class="col-12 col-sm-6 col-xl-4">
+              <h3>Storyboards</h3>
+              
+              <div id="storyboards"></div>
+              <script>
+
+                const svgsb = d3.select("#storyboards")
+                    .append("svg")
+                      .attr("width", w)
+                      .attr("height", h);
+    
+                    svgsb.selectAll("rect")
+                    .data(sb)
+                    .enter()
+                    .append("rect")
+                      .attr("x", (d, i) => 22 + i * 40)
+                      .attr("y", (d, i) => h - d-40)
+                      .attr("width", 30)
+                      .attr("height", (d, i) => d)
+                      .attr("fill", "#96061e")
+                      .attr("class", "bar")
+                      .append("title")
+                        .text((d)=>d + "%");
+                  
+                    svgsb.selectAll("text")
+                      .data(mes)
+                      .enter()
+                      .append('text')
+                      .attr('x', (d,i)=> 23 + i*40)
+                      .attr('y', (d,i)=> h-20)
+                      .text((d)=>d)
+                      .attr('fill','#a79d9d');
+
+              </script>
+            </div>
+        </div> <!--row -->
+        
+        <!--Seccion game desing-->
+        <div class="titulo">
+          <h1>GAME DESING</h1>
+          <div class="adorno"></div>
+        </div>      
+        <div class="row">
+            <div class="col-12 col-sm-6 col-xl-4">
+              <h3>Game play</h3>
+              <div id="gameplayd"></div>
+              <script>
+
+                  const svggpd = d3.select("#gameplayd")
+                    .append("svg")
+                      .attr("width", w)
+                      .attr("height", h);
+    
+                    svggpd.selectAll("rect")
+                    .data(gpd)
+                    .enter()
+                    .append("rect")
+                      .attr("x", (d, i) => 22 + i * 40)
+                      .attr("y", (d, i) => h - d-40)
+                      .attr("width", 30)
+                      .attr("height", (d, i) => d)
+                      .attr("fill", "#96061e")
+                      .attr("class", "bar")
+                      .append("title")
+                        .text((d)=>d + "%");
+                  
+                    svggpd.selectAll("text")
+                      .data(mes)
+                      .enter()
+                      .append('text')
+                      .attr('x', (d,i)=> 23 + i*40)
+                      .attr('y', (d,i)=> h-20)
+                      .text((d)=>d)
+                      .attr('fill','#a79d9d');
+  
+                </script>
+            </div>
+            <div class="col-12 col-sm-6 col-xl-4">
+              <h3>Mechanics</h3>
+              <div id="mechanicsd"></div>
+              <script>
+                  
+                  const svgmd = d3.select("#mechanicsd")
+                    .append("svg")
+                      .attr("width", w)
+                      .attr("height", h);
+    
+                    svgmd.selectAll("rect")
+                    .data(md)
+                    .enter()
+                    .append("rect")
+                      .attr("x", (d, i) => 22 + i * 40)
+                      .attr("y", (d, i) => h - d-40)
+                      .attr("width", 30)
+                      .attr("height", (d, i) => d)
+                      .attr("fill", "#96061e")
+                      .attr("class", "bar")
+                      .append("title")
+                        .text((d)=>d + "%");
+                  
+                    svgmd.selectAll("text")
+                      .data(mes)
+                      .enter()
+                      .append('text')
+                      .attr('x', (d,i)=> 23 + i*40)
+                      .attr('y', (d,i)=> h-20)
+                      .text((d)=>d)
+                      .attr('fill','#a79d9d');
+
+                </script>
+            </div>
+            <div class="col-12 col-sm-6 col-xl-4">
+              <h3>Level Design</h3>
+              
+              <div id="leveldesign"></div>
+              <script>
+
+                const svgld = d3.select("#leveldesign")
+                    .append("svg")
+                      .attr("width", w)
+                      .attr("height", h);
+    
+                    svgld.selectAll("rect")
+                    .data(ld)
+                    .enter()
+                    .append("rect")
+                      .attr("x", (d, i) => 22 + i * 40)
+                      .attr("y", (d, i) => h - d-40)
+                      .attr("width", 30)
+                      .attr("height", (d, i) => d)
+                      .attr("fill", "#96061e")
+                      .attr("class", "bar")
+                      .append("title")
+                        .text((d)=>d + "%");
+                  
+                    svgld.selectAll("text")
+                      .data(mes)
+                      .enter()
+                      .append('text')
+                      .attr('x', (d,i)=> 23 + i*40)
+                      .attr('y', (d,i)=> h-20)
+                      .text((d)=>d)
+                      .attr('fill','#a79d9d');
+
+              </script>
+            </div>
+        </div> <!--row -->
+
+        <!--Seccion development-->
+        <div class="titulo">
+          <h1>DEVELOPMENT</h1>
+          <div class="adorno"></div>
+        </div>      
+        
+        <div class="row">
+            <div class="col-12 col-sm-6 col-xl-4">
+              <h3>Inteligencia Artificial</h3>
+              <div id="IA"></div>
+              <script>
+         
+                  const svgIA = d3.select("#IA")
+                    .append("svg")
+                      .attr("width", w)
+                      .attr("height", h);
+    
+                    svgIA.selectAll("rect")
+                    .data(IA)
+                    .enter()
+                    .append("rect")
+                      .attr("x", (d, i) => 22 + i * 40)
+                      .attr("y", (d, i) => h - d-40)
+                      .attr("width", 30)
+                      .attr("height", (d, i) => d)
+                      .attr("fill", "#96061e")
+                      .attr("class", "bar")
+                      .append("title")
+                        .text((d)=>d + "%");
+                  
+                    svgIA.selectAll("text")
+                      .data(mes)
+                      .enter()
+                      .append('text')
+                      .attr('x', (d,i)=> 23 + i*40)
+                      .attr('y', (d,i)=> h-20)
+                      .text((d)=>d)
+                      .attr('fill','#a79d9d');
+  
+                </script>
+            </div>
+            <div class="col-12 col-sm-6 col-xl-4">
+              <h3>Mechanics</h3>
+              <div id="mechanicsI"></div>
+              <script>
+
+                  const svgmI = d3.select("#mechanicsI")
+                    .append("svg")
+                      .attr("width", w)
+                      .attr("height", h);
+    
+                    svgmI.selectAll("rect")
+                    .data(mI)
+                    .enter()
+                    .append("rect")
+                      .attr("x", (d, i) => 22 + i * 40)
+                      .attr("y", (d, i) => h - d-40)
+                      .attr("width", 30)
+                      .attr("height", (d, i) => d)
+                      .attr("fill", "#96061e")
+                      .attr("class", "bar")
+                      .append("title")
+                        .text((d)=>d + "%");
+                  
+                    svgmI.selectAll("text")
+                      .data(mes)
+                      .enter()
+                      .append('text')
+                      .attr('x', (d,i)=> 23 + i*40)
+                      .attr('y', (d,i)=> h-20)
+                      .text((d)=>d)
+                      .attr('fill','#a79d9d');
+  
+                </script>
+            </div>
+            <div class="col-12 col-sm-6 col-xl-4">
+              <h3>Game Play</h3>
+              
+              <div id="gameplayI"></div>
+              <script>
+                
+                const svggpI = d3.select("#gameplayI")
+                    .append("svg")
+                      .attr("width", w)
+                      .attr("height", h);
+    
+                    svggpI.selectAll("rect")
+                    .data(gpI)
+                    .enter()
+                    .append("rect")
+                      .attr("x", (d, i) => 22 + i * 40)
+                      .attr("y", (d, i) => h - d-40)
+                      .attr("width", 30)
+                      .attr("height", (d, i) => d)
+                      .attr("fill", "#96061e")
+                      .attr("class", "bar")
+                      .append("title")
+                        .text((d)=>d + "%");
+                  
+                    svggpI.selectAll("text")
+                      .data(mes)
+                      .enter()
+                      .append('text')
+                      .attr('x', (d,i)=> 23 + i*40)
+                      .attr('y', (d,i)=> h-20)
+                      .text((d)=>d)
+                      .attr('fill','#a79d9d');
+
+              </script>
+            </div>
+        </div> <!--row -->
+
+        <!--Pie de página-->
+        <div class="titulo">
+          <p>&copy; YotecatlWeb<br>yotecatlwebprog@gmail.com</p>
+       </div>   
+     
+
+    </div> <!--fin Container -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/tablaGamestarM.js"></script>
+    <script type="text/javascript" src="js/tablaBloxels.js"></script>
+    <script type="text/javascript" src="js/tablaKodu.js"></script>
+</body>
+</html>
