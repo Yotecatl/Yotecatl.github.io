@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+.navbar {
+  background-color: #332f2c;
+  height: 106px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  color: white !important;
+  font-size: 32px;
+  font-weight:700;
+}
+
+#hero {
+  background-color: #4C0230;
+  height: 700px;
+}
+
+#hero img {
+  height: 300px;
+  width: 300px;
+  border-radius:50%;
+}
+
+#porfolio img {
+  height:  200px;
+  width: auto;
+}
+
+#hero h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight:700;
+  color: white;
+  font-size: 50px;
+}
+
+#hero p {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 25px;
+}
+
+#hero .fa-star {
+  color: white;
+}
+
+#portafolio .project {
+  height: 300px;
+  background-color: #D6041A;
+}
+
+#portafolio h1 {
+  font-family: 'Montserrat' sans-serif;
+  color:#D6041A;
+  font-weight: 700;
+}
+
+#hero .star hr {
+  width: 100px;
+  height: 5px;
+  background-color: white;
+}
+
+#hero .star .fa-star {
+  color: white;
+}
+
+#portafolio .star hr {
+  width: 100px;
+  height: 5px;
+  background-color: #D6041A;
+}
+
+#portafolio .star .fa-star {
+  color: #D6041A;
+}
+
+#about {
+  background-color: #4C0E4C
+}
+
+#about .star hr { 
+  background-color: white; 
+  height: 5px; 
+  width: 100px;
+}
+
+#about .star .fa-star {
+  color: white;
+}
+
+#about h1 {
+  font-family: 'Montserrat' sans-serif;
+  color: white;
+  font-weight: 700;
+}
+
+#about p {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-style: 20px;
+}
+
+#about button {
+  border: soloid 2.5px white;
+  color: white;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#about button:hover {
+  color: black;
+  background-color: white;
+}
